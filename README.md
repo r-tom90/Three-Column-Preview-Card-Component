@@ -31,7 +31,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [https://github.com/r-tom90/Three-Column-Preview-Card-Component](https://github.com/r-tom90/Three-Column-Preview-Card-Component)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [https://r-tom90.github.io/Three-Column-Preview-Card-Component/](https://r-tom90.github.io/Three-Column-Preview-Card-Component/)
 
 ### Built with
 
