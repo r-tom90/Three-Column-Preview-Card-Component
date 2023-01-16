@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+
+:root {
+  --sedan: hsl(31, 77%, 52%);
+  --suv: hsl(184, 100%, 22%);
+  --luxury: hsl(179, 100%, 13%);
+  --white-paragraphs: hsla(0, 0%, 100%, 0.75);
+  --light-gray: hsl(0, 0%, 95%); /* (background, headings, buttons) */
+  --font1: "Lexend Deca";
+  --font2: "Big Shoulders Display";
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html,
+body {
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--light-gray);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+main {
+  width: 850px;
+  height: auto;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+img,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+p,
+h2 {
+  overflow-wrap: break-word;
+}
+
+h2 {
+  font-size: 2.5em;
+  font-family: var(--font2), sans-serif;
+  color: var(--light-gray);
+  text-transform: uppercase;
+}
+
+p {
+  font-family: var(--font1), sans-serif;
+  font-size: 15px;
+  color: var(--white-paragraphs);
+}
+
+button {
+  color: var(--light-gray);
+  background-color: transparent;
+}
+
+.sedan {
+  background-color: var(--sedan);
+  border-radius: 15px 0 0 15px;
+}
+
+.suv {
+  background-color: var(--suv);
+}
+
+.luxury {
+  background-color: var(--luxury);
+  border-radius: 0 15px 15px 0;
+}
+
+.sedan,
+.suv,
+.luxury {
+  padding: 2.4rem;
+}
+
+.headings {
+  margin: 1.75rem 0;
+}
+
+.desciption {
+  margin-bottom: 5rem;
+}
+
+.learn-more {
+  background-color: var(--light-gray);
+  border: none;
+  line-height: 2.25;
+  padding: 0 20px;
+  font-size: 1rem;
+  border-radius: 25px;
+  color: black;
+}
+
+.sedan button {
+  color: var(--sedan);
+}
+.suv button {
+  color: var(--suv);
+}
+.luxury button {
+  color: var(--luxury);
+}
+
+.learn-more:hover {
+  border: 1px solid var(--light-gray);
+  color: var(--light-gray);
+  background: none;
+  cursor: pointer;
+  transform: none;
+}
+
+.attribution {
+  margin: 10px;
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* Media Query */
+@media only screen and (max-width: 880px) {
+  body {
+    display: block;
+  }
+  main {
+    width: 300px;
+    margin: 20px auto;
+    display: block;
+  }
+  .sedan {
+    border-radius: 15px 15px 0 0;
+  }
+  .luxury {
+    border-radius: 0 0 15px 15px;
+  }
+  .sedan,
+  .suv,
+  .luxury {
+    padding: 50px 35px;
+  }
+
+  .headings {
+    margin: 1.5rem 0;
+  }
+
+  .desciption {
+    margin-bottom: 2rem;
+  }
+}
